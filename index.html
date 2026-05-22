@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Health Cookbook Samples — Sandeep Grover</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -42,71 +41,32 @@ footer{text-align:center;padding:32px;color:var(--muted);font-size:.82rem;border
 </style>
 </head>
 <body>
-
 <nav>
   <a href="https://sandyyy123.github.io" class="nav-back">← Portfolio</a>
   <span class="nav-title">Health Cookbook Samples</span>
   <a href="https://github.com/Sandyyy123/health-cookbook-samples" target="_blank" class="nav-back" style="margin-left:auto">GitHub ↗</a>
 </nav>
-
 <div class="hero">
   <h1>Health Cookbook Samples</h1>
   <p>KDP health cookbooks targeting adults 45+: liver-friendly recipes with strict 6-element template, nutrition cross-referencing, swap guides, and meal plans.</p>
   <div class="badges"><span class="badge">KDP publishing</span> <span class="badge">nutrition QC</span> <span class="badge">accessible tone</span></div>
   <div class="metric-bar">✦ Liver-friendly · adults 45+ · meal plans</div>
 </div>
-
 <div class="card">
   <div class="section-title">Interactive Demo</div>
   <div class="highlight">KDP | Adults 45+ | Liver-friendly | 6-element template</div>
   <p style="font-size:.82rem;color:#94a3b8;margin-bottom:16px">Nutritional Compliance Score by Recipe Category</p>
-  <div class="demo-container">
-<canvas id="myChart"></canvas>
-<script>
-new Chart(document.getElementById('myChart'), {
-  type: 'bar',
-  data: {
-    labels: ["Breakfast", "Lunch", "Dinner", "Snacks", "Meal Plans"],
-    datasets: [{
-      label: 'Compliance (%)',
-      data: [97.3, 95.8, 94.2, 96.7, 98.1],
-      backgroundColor: ["rgba(99,102,241,0.7)", "rgba(99,102,241,0.7)", "rgba(99,102,241,0.7)", "rgba(99,102,241,0.7)", "rgba(139,92,246,0.85)"],
-      borderColor: 'rgba(99,102,241,0.3)',
-      borderWidth: 1,
-      borderRadius: 6
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { display: false },
-      tooltip: { callbacks: { label: ctx => ' ' + ctx.parsed.y.toLocaleString() } }
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-        grid: { color: 'rgba(255,255,255,0.05)' },
-        ticks: { color: '#94a3b8', font: { size: 11 } },
-        title: { display: true, text: 'Compliance (%)', color: '#818cf8', font: { size: 12 } }
-      },
-      x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 11 } } }
-    }
-  }
-});
-</script></div>
+  <div class="demo-container"><canvas id="myChart"></canvas><script>
+new Chart(document.getElementById('myChart'),{type:'bar',data:{labels:["Breakfast", "Lunch", "Dinner", "Snacks", "Meal Plans"],datasets:[{label:'Compliance (%)',data:[97.3, 95.8, 94.2, 96.7, 98.1],backgroundColor:["rgba(99,102,241,0.7)", "rgba(99,102,241,0.7)", "rgba(99,102,241,0.7)", "rgba(99,102,241,0.7)", "rgba(139,92,246,0.9)"],borderRadius:6,borderWidth:0}]},options:{responsive:true,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#94a3b8'},title:{display:true,text:'Compliance (%)',color:'#818cf8'}},x:{grid:{display:false},ticks:{color:'#94a3b8',font:{size:10},maxRotation:35}}}}});</script></div>
   <div class="stats-grid"><div class="stat-box"><span class="stat-value">84</span><span class="stat-label">Recipes</span></div><div class="stat-box"><span class="stat-value">45+</span><span class="stat-label">Target Age</span></div><div class="stat-box"><span class="stat-value">Liver-friendly</span><span class="stat-label">Diet Focus</span></div><div class="stat-box"><span class="stat-value">Cross-referenced</span><span class="stat-label">Nutrition QC</span></div></div>
 </div>
-
 <div class="card">
   <div class="section-title">Tech Stack</div>
   <div class="badges" style="margin-bottom:0"><span class="badge">KDP publishing</span> <span class="badge">nutrition QC</span> <span class="badge">accessible tone</span></div>
 </div>
-
 <footer>
-  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> ·
-     <a href="https://github.com/Sandyyy123/health-cookbook-samples" target="_blank">GitHub Repo</a> ·
-     <a href="https://linkedin.com/in/sandeep-grover-b3192a16" target="_blank">LinkedIn</a></p>
+  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> &nbsp;·&nbsp;
+     <a href="https://github.com/Sandyyy123/health-cookbook-samples" target="_blank">View on GitHub</a></p>
 </footer>
-
 </body>
 </html>
